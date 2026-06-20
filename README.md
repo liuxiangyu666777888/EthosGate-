@@ -69,6 +69,10 @@ npm run dev
 - 伦理门禁：`READY`、`READY_WITH_CONDITIONS`、`NEEDS_REVIEW`、`BLOCKED`。
 - 报告导出：Markdown 和 HTML。
 
+## 项目文档
+
+课程/项目提交文档见：[docs/项目文档.md](docs/项目文档.md)。文档包含项目背景、系统需求设计、详细设计、系统使用说明和开源仓库链接。
+
 ## 模型实测说明
 
 当前内部试点优先支持 OpenAI 兼容 `/v1/chat/completions` 接口。配置示例：
