@@ -12,5 +12,5 @@ Object.defineProperty(window, 'localStorage', {
 
 test('renders login entry', () => {
   render(<App />)
-  expect(screen.getByText('LLM部署伦理评估仪表盘')).toBeInTheDocument()
+  expect(screen.getByRole('heading', { name: 'EthosGate · 善治' })).toBeInTheDocument()
 })

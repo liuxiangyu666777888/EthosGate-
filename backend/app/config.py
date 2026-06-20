@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 
 
 class Settings(BaseSettings):
-    app_name: str = "LLM部署伦理评估仪表盘"
+    app_name: str = "EthosGate · 善治"
     app_env: str = "development"
     database_url: str = f"sqlite:///{BASE_DIR / 'data' / 'app.db'}"
     jwt_secret: str = "change-this-development-secret"

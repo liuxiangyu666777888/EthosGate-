@@ -90,8 +90,8 @@ function Login({ onDone }: { onDone: () => void }) {
         <span>RESPONSIBLE INNOVATION</span>
       </div>
       <section className="login-panel">
-        <div className="login-kicker"><span className="mark"><ShieldCheck size={24} /></span>Ethics Gatehouse</div>
-        <h1>LLM部署伦理评估仪表盘</h1>
+        <div className="login-kicker"><span className="mark"><ShieldCheck size={24} /></span>EthosGate · 善治</div>
+        <h1>EthosGate · 善治</h1>
         <p>面向模型部署项目的证据链、参与闭环和伦理门禁工作台。</p>
         <Field label="邮箱" value={email} onChange={setEmail} />
         <Field label="密码" value={password} onChange={setPassword} />
@@ -148,7 +148,7 @@ export function App() {
   return (
     <div className="app-shell">
       <aside className="sidebar">
-        <div className="brand"><span><ShieldCheck size={21} /></span><strong>伦理评估</strong><small>RI Console</small></div>
+        <div className="brand"><span><ShieldCheck size={21} /></span><strong>EthosGate · 善治</strong><small>治理工作台</small></div>
         <button className="new" onClick={createProject}>新建项目</button>
         <div className="project-list">
           {projects.map((item) => (
@@ -164,7 +164,7 @@ export function App() {
       <main className="workspace">
         <header className="topbar">
           <div>
-            <p className="eyebrow">Responsible Innovation Console</p>
+            <p className="eyebrow">EthosGate Governance Console</p>
             <h1>{project?.name || '项目工作台'}</h1>
             {project && <p className="subtitle">{String(project.governance.deployment_boundary || '请在项目设置中定义部署边界')}</p>}
           </div>

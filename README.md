@@ -1,4 +1,4 @@
-# LLM部署伦理评估仪表盘
+# EthosGate · 善治
 
 内部试点版 LLM 部署伦理评估工具：FastAPI 后端、Vite React 前端、PostgreSQL/Docker Compose 主配置、SQLite 本地回退、OpenAI Responses API 辅助评审、被部署模型 OpenAI 兼容接口实测。
 
