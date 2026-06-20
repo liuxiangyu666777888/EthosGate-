@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ethics
+      POSTGRES_PASSWORD: ethics
+      POSTGRES_DB: ethics_dashboard
+    ports:
+      - "5432:5432"
+    volumes:
+      - ethics_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ethics -d ethics_dashboard"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+volumes:
+  ethics_pgdata:
